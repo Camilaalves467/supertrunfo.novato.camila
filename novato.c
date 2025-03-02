@@ -50,11 +50,11 @@ int main (){
 
     printf ("Área em km²: %2.fkm² \n", area2);
 
-    printf ("Densidade populacional carta 1: %.3fkm²\n", habitantes / area);
-    printf ("Pib per capita carta 1: %.4f mil\n", pib + habitantes);
+    printf ("Densidade populacional carta 1: %.3fhab/km²\n", habitantes / area);
+    printf ("Pib per capita carta 1: %.3f mil\n", pib + habitantes);
 
-    printf ("Densidade populacional carta 2: %.3fkm²\n", habitantes2 / area2);
-    printf ("Pib per capita carta 2: %.4f mil\n", pib2 + habitantes2);
+    printf ("Densidade populacional carta 2: %.3fhab/km²\n", habitantes2 / area2);
+    printf ("Pib per capita carta 2: %.3f mil\n", pib2 + habitantes2);
 
     return 0;
 
