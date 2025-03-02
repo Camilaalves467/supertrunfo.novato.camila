@@ -3,54 +3,56 @@
 
 int main (){
 
-    char estado, estado2;
-    char cidade, cidade2;
-    double habitantes, habitantes2;
-    float mediarendasalarialporfamilia, mediarendasalarialporfamilia2;
-    float mediahabitantespordomicilio, mediahabitantespordomicilio2;
+    //informações cartas 1 e 2 já estipuladas
 
-    printf ("Digite a sigla do estado para a carta 1: \nEstado: ");
-    scanf ("%s", &estado);
-
-    printf ("Agora, digite o nome de uma cidade do mesmo estado que você escolheu na carta 1: \nCidade: ");
-    scanf ("%s", &cidade);
-
-    printf ("Digite a média de habitante que há nessa cidade da carta 1: \nHabitantes: ");
-    scanf ("%d", &habitantes);
-
-    printf ("Digite a média salárial por família dessa cidade: \nMedia salaria por familia: ");
-    scanf ("%f", &mediarendasalarialporfamilia);
-
-    printf ("Por fim digite a média de habitantes por familia na cidade escolhida na carta 1: \nMédia de habitantes por fámilia: ");
-    scanf ("%f", &mediahabitantespordomicilio);
-
-    printf ("Agora vamos para a carta número 2 \n");
-
-    printf ("Digite a sigla do estado para a carta 2 - \nEstado: ");
-    scanf ("%s", &estado2);
-
-    printf ("Agora, digite o nome de uma cidade do mesmo estado que você escolheu na carta 2 - \nCidade: ");
-    scanf ("%s", &cidade2);
-
-    printf ("Digite a média de habitante que há nessa cidade da carta 2 - \nHabitantes: ");
-    scanf ("%d", &habitantes2);
-
-    printf ("Digite a média salárial por família dessa cidade: \nMedia salaria por familia - ");
-    scanf ("%f", &mediarendasalarialporfamilia2);
-
-    printf ("Por fim digite a média de habitantes por familia na cidade escolhida na carta 2 - \nMedia de habitantes por fámilia: ");
-    scanf ("%f", &mediahabitantespordomicilio2);
+    char estado[20] = "São Paulo";
+    char estado2[20] = "Minas Gerais";
+    char cidade[50] = "Cotia";
+    char cidade2[50] = "Nazareno";
+    double habitantes = 325.125;
+    double habitantes2 = 10.546;
+    int pontosturisticos = 15;
+    int pontosturisticos2 = 7;
+    float pib = 13.365; 
+    float pib2 = 668.985;
+    float area = 323.92;
+    float area2 = 342.568;
 
 
-    //exibindo resultado das cartas 1 e 2
 
-    printf ("Carta 1: \nEstado: %s\n Cidade: %s\n Habitantes%f\n Media salarial por familia: %f\n Media de habitantes por fámilia: \n",
-        estado, cidade, habitantes, mediarendasalarialporfamilia, mediahabitantespordomicilio);
+    //mostrando informações em tela
+    printf ("Comparando cartas 1 e 2 - \n");
+    
+    printf ("Estados \n");
+    printf ("Estado carta 1: %s\n", estado);
+    printf ("Estado carta 2: %s\n", estado2);
 
-    printf ("Carta 2: \nEstado: %s\n Cidade: %s\n Habitantes%f\n Media salarial por familia: %f\n Media de habitantes por fámilia: \n",
-        estado2, cidade2, habitantes2, mediarendasalarialporfamilia2, mediahabitantespordomicilio2);
+    printf ("Cidades \n");
+    printf ("Cidade carta 1: %s\n", cidade);
+    printf ("Cidade carta 2: %s\n", cidade2);
+
+    printf ("Número de habitantes na cidade \n");
+    printf ("Habitantes carta 1: %f\n", habitantes);
+    printf ("Habitantes carta 2: %f\n", habitantes2);
+
+    printf ("Pontos turisticos \n");
+    printf ("Carta 1: %d\n", pontosturisticos);
+    printf ("Carta 2: %d\n", pontosturisticos2);
+
+    printf ("PIB per capita \n");
+    printf ("PIB carta 1: %2.f bilhões\n", pib);
+    printf ("PIB carta 2: %2.f milhões\n", pib2);
+
+    printf ("Área em Km² \n");
+    printf ("Área total da cidade carta 1: %2.fkm² \n", area);
+    printf ("Área total da cidade carta 2: %2.fkm² \n", area2);
+
+    return 0;
+
+ 
 
 
-return 0;
+
+
 
 }
