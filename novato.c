@@ -60,14 +60,8 @@ int main (){
 
     return 0;
 
-    printf ("Agora vamos comparar as Cartas!")
+    printf ("Agora vamos comparar as Cartas!");
 
     
-
- 
-
-
-
-
 
 }
