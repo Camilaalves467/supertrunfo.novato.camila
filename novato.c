@@ -5,10 +5,10 @@ int main (){
 
     //informações cartas 1 e 2 já estipuladas
 
-    char estado[20] = "São Paulo";
-    char estado2[20] = "Minas Gerais";
-    char cidade[50] = "Cotia";
-    char cidade2[50] = "Nazareno";
+    char estado[20];
+    char estado2[20];
+    char cidade[50];
+    char cidade2[50];
     double habitantes = 325.125;
     double habitantes2 = 10.546;
     int pontosturisticos = 15;
@@ -25,9 +25,11 @@ int main (){
     printf ("Super Trunfo: carta 1 e 2");
     
     printf ("*** Carta 1 *** \n");
-    printf ("Estado: %s\n", estado);
+    printf ("Estado carta 1: %s\n", estado);
+    scanf ("%s", estado);
 
-    printf ("Cidade: %s\n", cidade);
+    printf ("Cidade carta 2: %s\n", cidade);
+    scanf ("%s", cidade);
     
     printf ("Habitantes: %.3f\n", habitantes);
 
@@ -50,13 +52,17 @@ int main (){
 
     printf ("Área em km²: %2.fkm² \n", area2);
 
-    printf ("Densidade populacional carta 1: %.3fhab/km²\n", habitantes / area);
-    printf ("Pib per capita carta 1: %.3f mil\n", pib + habitantes);
+    printf ("Densidade populacional carta 1: %.3fhab/km²\n", habitantes / area, (habitantes / area));
+    printf ("Pib per capita carta 1: %.3f mil\n", pib + habitantes, (pib + habitantes));
 
-    printf ("Densidade populacional carta 2: %.3fhab/km²\n", habitantes2 / area2);
-    printf ("Pib per capita carta 2: %.3f mil\n", pib2 + habitantes2);
+    printf ("Densidade populacional carta 2: %.3fhab/km²\n", habitantes2 / area2, (habitantes2 / area2));
+    printf ("Pib per capita carta 2: %.3f mil\n", pib2 + habitantes2, (pib2 + habitantes2));
 
     return 0;
+
+    printf ("Agora vamos comparar as Cartas!")
+
+    
 
  
 
