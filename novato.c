@@ -10,7 +10,7 @@ int main (){
     char cidade[50];
     char cidade2[50];
     double habitantes = 325.125;
-    double habitantes2 = 365.478;
+    double habitantes2 = 315.478;
     int pontosturisticos = 15;
     int pontosturisticos2 = 19;
     double pib = 13.985;
@@ -85,18 +85,53 @@ int main (){
 
     printf ("Pib per capita carta 2: %.3f mil\n\n", pibpercap2);
 
+
     printf ("Resultados das cartas ganhadoras! \n\n");
-    
+    // calculando os resultados e mostrando a carta ganhadora
     printf ("Em Habitantes ganhou a Carta %d\n", (habitantes > habitantes2)*1 + (habitantes <= habitantes2) * 2);
     printf ("Em Pontos Turisticos ganho a Carta %i\n", (pontosturisticos > pontosturisticos2) * 1 + (pontosturisticos <= pontosturisticos2) * 2);
     printf ("Em PIB ganhou a Carta %d\n", (pib > pib2) * 1 + (pib <= pib2));
     printf ("Em Área km² ganhou a carta: %d\n", (area > area2) * 1 + (area <= area2) * 2 );
     printf ("Pela Densidade Populacional ganhou a carta: %d\n", (densidadepopu < densidadepopu2) * 1 + (densidadepopu >= densidadepopu2) * 2);
     printf ("Pelo PIB per capita, ganhou a carta: %d\n", (pibpercap > pibpercap2) * 1 + (pibpercap <= pibpercap2) * 2);
-    printf ("E o Super Poder ganhador é a carta: %d\n", (superpoder > superpoder2) * 1 + (superpoder <= superpoder2) * 2);
+    printf ("E o Super Poder ganhador é a carta: %d\n\n", (superpoder > superpoder2) * 1 + (superpoder <= superpoder2) * 2);
 
+    printf ("Comparando os Resultados das Cartas(2) \n\n");
 
+    printf ("Carta 1 é do estado de %s, cidade  de %s, com %.3f mil habitantes \n", estado, cidade, habitantes);
+    printf ("Carta 2 é do estado de %s, cidade  de %s, com %.3f mil habitantes \n", estado2, cidade2, habitantes2);
 
+    //comparando as cartas com as informações em tela
+    if (habitantes > habitantes2){
+        printf ("Resultado: Carta 1 (SP-Cotia) venceu! \n\n"); //dados aleatorios
+    } else {
+        printf ("Resultado: Carta 2 (SP-Arujá) venceu! \n\n"); // dados aletorios
+    }
+
+    printf ("Carta 1 há %i pontos turisticos \n", pontosturisticos);
+    printf ("Carta 2 há %i pontos turisticos\n", pontosturisticos2);
+    if (pontosturisticos > pontosturisticos2){
+        printf ("Resultado: Carta 1 venceu!\n\n");
+    } else{
+        printf ("Resultado: Carta 2 venceu!\n\n");
+    }
+    printf ("Carta 1 PIB de %.3f \n", pib);
+    printf ("Carta 2 PIB de %.3f \n", pib2);
+    if (pib > pib2){
+        printf ("Resultado: Carta 1 venceu! \n\n");
+    }else {
+        printf ("Resultado: Carta 2 venceu! \n\n");
+    }
+    printf ("Carta 1 tem a densidade populacional de %f\n", densidadepopu);
+    printf ("Carta 2 tem a desindade populacional de %f\n", densidadepopu2);
+    if (densidadepopu < densidadepopu2){
+        printf ("Resuldado: Carta 1 ganhou! \n\n");
+    
+    } else{
+        printf ("Resultado: Carta 2 venceu!");
+        
+    }
+ 
 
     return 0;
 
