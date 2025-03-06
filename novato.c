@@ -5,10 +5,8 @@ int main (){
 
     //informações cartas 1 e 2 já estipuladas
 
-    char estado[20]; 
-    char estado2[20];
-    char cidade[50];
-    char cidade2[50];
+    char estado = SP, estado2= SP;
+    char cidade = SP, cidade2 = ARUJA;
     double habitantes = 325.125;
     double habitantes2 = 315.478;
     int pontosturisticos = 15;
@@ -25,19 +23,7 @@ int main (){
     float superpoder2 = habitantes2 + pontosturisticos2 + pib2 + area2 + densidadepopu2 + pibpercap2;
 
     
-    //mostrando informações em tela
-    printf ("Super Trunfo: carta 1 e 2\n");
-    
-    printf ("*** Carta 1 *** \n\n");
-    printf ("Digite estado e cidade carta 1: \n");
 
-    printf ("Estado: %s\n", estado);
-    scanf ("%s", estado);
-
-    printf ("Cidade: %s\n", cidade);
-    scanf ("%s", &cidade);
-
-    //testando impressão das informações
     // mostrando informações completas
 
     printf ("***Dados Carta 1***\n");
@@ -57,18 +43,9 @@ int main (){
 
     printf ("Pib per capita: %.3f mil\n\n", pibpercap);
 
+        // mostrando informações completas
+
     printf ("*** Carta 2 *** \n\n");
-    printf ("Digite estado e cidade carta 2: \n");
-
-    printf ("Estado: %s\n", estado2);
-    scanf ("%s", &estado2);
-
-    printf ("Cidade: %s\n", cidade2);
-    scanf ("%s", &cidade2);
-
-    //testando impressão das informações
-    // mostrando informações completas
-
     printf ("Estado: %s\n", estado2);
 
     printf ("Cidade: %s\n", cidade2);
