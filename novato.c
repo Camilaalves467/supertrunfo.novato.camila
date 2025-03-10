@@ -127,37 +127,40 @@ int main (){
     {
     case 1:
     printf("Jogador: Habitantes - \n");
-    break;
+    printf ("Carta 1 é do estado de %s, cidade de %s, com %.3f mil Habitantes \n", estado, cidade, habitantes);
+    printf ("Carta 2 é do estado de %s, cidade  de %s, com %.3f mil habitantes \n", estado2, cidade2, habitantes2);    break;
     case 2:
     printf("Jogador: Area em Km² - \n");
+    printf ("Carta 1 é do estado de %s, cidade de %s, com %.3f km² \n", estado, cidade, area);
+    printf ("Carta 2 é do estado de %s, cidade  de %s, com %.3f km² \n", estado2, cidade2, area2);
     break;
-    case 3:
-    printf("Jogador: PIB - \n");
-    break;
-    case 4:
+    // testecase 3:
+    // printf("Jogador: PIB - \n");
+    //break;
+    // teste case 4:
     printf("Jogador: Pontos Turisticos - \n");
-    break;
+    //break;
     case 5:
     printf("Jogador: Densidade Populacional - \n");
+    printf ("Carta 1 é do estado de %s, cidade de %s, com Densidade Populacional a %3.f \n", estado, cidade, densidadepopu);
+    printf ("Carta 1 é do estado de %s, cidade de %s, com Densidade Populacional a %3.f \n", estado2, cidade2, densidadepopu2);
     break;
     default:("Opção invalida");
     break;
     }
 
-    if (escolhaJogador == 1)
+    if (escolhaJogador == 1) (habitantes > habitantes2);
+
     {
-    printf ("Carta 1 é do estado de %d, cidade de %d, com %.3f mil Habitantes \n", estado, cidade, habitantes);
-    printf ("Carta 2 é do estado de %d, cidade  de %d, com %.3f mil habitantes \n", estado2, cidade2, habitantes2);
-    }  else if (habitantes > habitantes2){
             printf ("Resultado: Carta 1 venceu!\n\n");
-        } else {
+
+        }  else {
             printf ("Resultado: Carta 2 venceu!\n\n");
         }
 
+
         if (escolhaJogador == 2)
         {
-        printf ("Carta 1 é do estado de %d, cidade de %d, com %.3f km² \n", estado, cidade, area);
-        printf ("Carta 2 é do estado de %d, cidade  de %d, com %.3f km² \n", estado2, cidade2, area2);
         }  else if (area > area2){
                 printf ("Resultado: Carta 1 venceu!\n\n");
             } else {
@@ -166,8 +169,7 @@ int main (){
 
             if (escolhaJogador == 3)
         {
-        printf ("Carta 1 é do estado de %d, cidade de %d, com Densidade Populacional a %3.f \n", estado, cidade, densidadepopu);
-        printf ("Carta 1 é do estado de %d, cidade de %d, com Densidade Populacional a %3.f \n", estado2, cidade2, densidadepopu2);
+                 
         }  else if (area < area2){
                 printf ("Resultado: Carta 1 venceu!\n\n");
             } else {
