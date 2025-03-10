@@ -21,7 +21,7 @@ int main (){
             printf ("Você está dentro dos criterios \n");
         } else {
             printf ("Você não se enquadra por conta da idade. \n");
-        } else {
+        } else if {
         printf ("Você não se enquadra por conta da renda. \n");
         } else  {
             printf ("Você não se enquadra pela quantidade de dependente.\n");

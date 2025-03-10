@@ -1,12 +1,14 @@
-
 #include <stdio.h>
+
 
 int main (){
 
     //informações cartas 1 e 2 já estipuladas
 
-    char estado[50]= 'SP', estado2= 'SP';
-    char cidade[50]= 'COTIA', cidade2 = 'ARUJA';
+    char estado[20] = 'sp';
+    char estado2[20]= 'sp';
+    char cidade[20] = 'cotia'; 
+    char cidade2[20] = 'aruja';
     double habitantes = 325.125;
     double habitantes2 = 315.478;
     int pontosturisticos = 15;
@@ -21,17 +23,17 @@ int main (){
     double pibpercap2 = pib2 + area2;
     float superpoder = habitantes + pontosturisticos + pib + area + densidadepopu + pibpercap;
     float superpoder2 = habitantes2 + pontosturisticos2 + pib2 + area2 + densidadepopu2 + pibpercap2;
-
+    int escolhaJogador;
     
 
     // mostrando informações completas
 
     printf ("***Dados Carta 1***\n");
-    printf ("Estado: %s\n", estado);
+    printf ("Estado: %d\n", estado);
 
-    printf ("Cidade: %s\n", cidade);
+    printf ("Cidade: %d\n", cidade);
 
-    printf ("Habitantes: %.3f\n", habitantes);
+    printf ("Habitantes: %.3f \n", habitantes);
 
     printf ("Pontos turisticos: %d\n", pontosturisticos);
 
@@ -46,9 +48,9 @@ int main (){
         // mostrando informações completas
 
     printf ("*** Carta 2 *** \n\n");
-    printf ("Estado: %s\n", estado2);
+    printf ("Estado: %d\n", estado2);
 
-    printf ("Cidade: %s\n", cidade2);
+    printf ("Cidade: %d\n", cidade2);
     
     printf ("Habitantes: %.3f\n", habitantes2);
 
@@ -75,8 +77,8 @@ int main (){
 
     printf ("Comparando os Resultados das Cartas(2) \n\n");
 
-    printf ("Carta 1 é do estado de %s, cidade  de %s, com %.3f mil habitantes \n", estado, cidade, habitantes);
-    printf ("Carta 2 é do estado de %s, cidade  de %s, com %.3f mil habitantes \n", estado2, cidade2, habitantes2);
+    printf ("Carta 1 é do estado de %d, cidade  de %d, com %.3f mil habitantes \n", estado, cidade, habitantes);
+    printf ("Carta 2 é do estado de %d, cidade  de %d, com %.3f mil habitantes \n", estado2, cidade2, habitantes2);
 
     //comparando as cartas com as informações em tela
     if (habitantes > habitantes2){
@@ -84,7 +86,7 @@ int main (){
     } else {
         printf ("Resultado: Carta 2 (SP-Arujá) venceu! \n\n"); // dados aletorios
     }
-
+// resultado com comparações em tela
     printf ("Carta 1 há %i pontos turisticos \n", pontosturisticos);
     printf ("Carta 2 há %i pontos turisticos\n", pontosturisticos2);
     if (pontosturisticos > pontosturisticos2){
@@ -105,14 +107,76 @@ int main (){
         printf ("Resuldado: Carta 1 ganhou! \n\n");
     
     } else{
-        printf ("Resultado: Carta 2 venceu!");
+        printf ("Resultado: Carta 2 venceu! \n\n");
         
     }
+
+
+    printf ("Hora de jogar pra valer!\n");
+    printf ("Você ficou com a Carta 1, escolha qual atributo gostaria de competir primeiro:\n");
+    printf ("1. Quantidade de Habitantes\n");
+    printf ("2. Area em Km²\n");
+    printf ("3. Produto Interno Bruto - PIB\n");
+    printf ("4. Número de Pontos Turisticos\n");
+    printf ("5. Densidade Populacional\n");
+    printf ("Escolha: \n");
+    scanf ("%d", &escolhaJogador);
+
+
+    switch (escolhaJogador)
+    {
+    case 1:
+    printf("Jogador: Habitantes - \n");
+    break;
+    case 2:
+    printf("Jogador: Area em Km² - \n");
+    break;
+    case 3:
+    printf("Jogador: PIB - \n");
+    break;
+    case 4:
+    printf("Jogador: Pontos Turisticos - \n");
+    break;
+    case 5:
+    printf("Jogador: Densidade Populacional - \n");
+    break;
+    default:("Opção invalida");
+    break;
+    }
+
+    if (escolhaJogador == 1)
+    {
+    printf ("Carta 1 é do estado de %d, cidade de %d, com %.3f mil Habitantes \n", estado, cidade, habitantes);
+    printf ("Carta 2 é do estado de %d, cidade  de %d, com %.3f mil habitantes \n", estado2, cidade2, habitantes2);
+    }  else if (habitantes > habitantes2){
+            printf ("Resultado: Carta 1 venceu!\n\n");
+        } else {
+            printf ("Resultado: Carta 2 venceu!\n\n");
+        }
+
+        if (escolhaJogador == 2)
+        {
+        printf ("Carta 1 é do estado de %d, cidade de %d, com %.3f km² \n", estado, cidade, area);
+        printf ("Carta 2 é do estado de %d, cidade  de %d, com %.3f km² \n", estado2, cidade2, area2);
+        }  else if (area > area2){
+                printf ("Resultado: Carta 1 venceu!\n\n");
+            } else {
+                printf ("Resultado: Carta 2 venceu!\n\n");
+            }
+
+            if (escolhaJogador == 3)
+        {
+        printf ("Carta 1 é do estado de %d, cidade de %d, com Densidade Populacional a %3.f \n", estado, cidade, densidadepopu);
+        printf ("Carta 1 é do estado de %d, cidade de %d, com Densidade Populacional a %3.f \n", estado2, cidade2, densidadepopu2);
+        }  else if (area < area2){
+                printf ("Resultado: Carta 1 venceu!\n\n");
+            } else {
+                printf ("Resultado: Carta 2 venceu!\n\n");
+            }
+
  
 
     return 0;
 
-
-    
 
 }

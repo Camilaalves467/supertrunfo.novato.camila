@@ -4,8 +4,8 @@ int main (){
 
     //informações cartas 1 e 2 já estipuladas
 
-    char estado[50]= 'SP', estado2= 'SP';
-    char cidade[50]= 'COTIA', cidade2 = 'ARUJA';
+    char estado = sp, estado2= sp;
+    char cidade = cotia, cidade2 = aruja;
     double habitantes = 325.125;
     double habitantes2 = 315.478;
     int pontosturisticos = 15;
@@ -30,7 +30,7 @@ int main (){
 
     printf ("Cidade: %s\n", cidade);
 
-    printf ("Habitantes: %.3f\n", habitantes);
+    printf ("Habitantes: %.3f \n", habitantes);
 
     printf ("Pontos turisticos: %d\n", pontosturisticos);
 
